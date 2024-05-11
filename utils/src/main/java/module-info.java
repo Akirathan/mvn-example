@@ -1,3 +1,3 @@
-module org.enso.alternative.lib {
+module org.enso.utils {
     exports org.enso.lib;
 }
