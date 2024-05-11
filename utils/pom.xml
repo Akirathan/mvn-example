@@ -7,9 +7,9 @@
     <version>1.0-SNAPSHOT</version>
   </parent>
 
-  <artifactId>alternative-lib</artifactId>
+  <artifactId>utils</artifactId>
   <version>1.0-SNAPSHOT</version>
 
-  <name>alternative-lib</name>
+  <name>utils</name>
   <packaging>jar</packaging>
 </project>
