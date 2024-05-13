@@ -21,6 +21,12 @@
     </dependency>
     <dependency>
       <groupId>${project.groupId}</groupId>
+      <artifactId>utils</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+    <!-- Runtime dependencies -->
+    <dependency>
+      <groupId>${project.groupId}</groupId>
       <artifactId>add-provider</artifactId>
       <version>${project.version}</version>
       <scope>runtime</scope>

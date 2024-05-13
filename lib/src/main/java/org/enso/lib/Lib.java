@@ -10,4 +10,8 @@ public class Lib {
     public int combine(int x, int y) {
         return provider.combine(x, y);
     }
+
+    static int packagePrivateCombine(int x, int y) {
+        return x * y;
+    }
 }
