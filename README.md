@@ -9,4 +9,8 @@ mvn compile jar:jar install
 mvn -f runner package shade:shade
 ```
 
+Run the fat jar:
+```shell
+java -jar runner/target/runner-1.0-SNAPSHOT.jar
+```
 
