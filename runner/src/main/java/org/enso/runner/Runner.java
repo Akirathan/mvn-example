@@ -6,9 +6,9 @@ import org.enso.lib.Service;
 
 public class Runner {
     public static void main(String[] args) {
+        System.out.println("Running lib with different service providers...");
         ServiceLoader<Service> serviceLoader = ServiceLoader.load(Service.class);
-        serviceLoader.stream().forEach(loader -> {
-            var serviceProvider = loader.get();
+        serviceLoader.forEach(serviceProvider -> {
             var lib = new Lib(serviceProvider);
             var res = lib.combine(1, 2);
             System.out.println("Lib with provider '" + serviceProvider.getClass().getName() + "' returned " + res);
