@@ -19,11 +19,6 @@
       <artifactId>lib</artifactId>
       <version>${project.version}</version>
     </dependency>
-    <dependency>
-      <groupId>${project.groupId}</groupId>
-      <artifactId>utils</artifactId>
-      <version>${project.version}</version>
-    </dependency>
     <!-- Runtime dependencies - service providers -->
     <dependency>
       <groupId>${project.groupId}</groupId>
