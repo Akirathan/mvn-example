@@ -1,4 +1,4 @@
 module runner {
   requires lib;
-  requires utils;
+  uses org.enso.lib.Service;
 }
