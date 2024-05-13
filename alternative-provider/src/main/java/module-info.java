@@ -1,6 +1,5 @@
-import org.enso.provider.AlternativeProvider;
 
-module org.enso.provider {
+module org.enso.alternative.provider {
     requires org.enso.lib;
-    provides org.enso.lib.Service with AlternativeProvider;
+    provides org.enso.lib.Service with org.enso.alternative.provider.AlternativeProvider;
 }

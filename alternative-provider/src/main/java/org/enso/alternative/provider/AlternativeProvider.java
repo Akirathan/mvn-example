@@ -1,4 +1,4 @@
-package org.enso.provider;
+package org.enso.alternative.provider;
 
 import org.enso.lib.Service;
 
