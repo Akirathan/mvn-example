@@ -8,6 +8,7 @@ The architecture of the application:
 ![Architecture](./simple-fat-jar-app.svg)
 
 ## Fat JAR
+Compile everything and assemble the fat jar:
 ```shell
 mvn compile jar:jar install
 mvn -f runner package shade:shade
