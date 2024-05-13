@@ -1,0 +1,3 @@
+module utils {
+  requires lib;
+}
