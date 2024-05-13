@@ -11,8 +11,8 @@
   <modules>
     <module>runner</module>
     <module>lib</module>
-    <module>provider</module>
-    <module>alternative-provider</module>
+    <module>add-provider</module>
+    <module>sub-provider</module>
   </modules>
       
   
