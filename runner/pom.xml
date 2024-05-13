@@ -24,19 +24,6 @@
       <artifactId>utils</artifactId>
       <version>${project.version}</version>
     </dependency>
-    <!-- Runtime dependencies -->
-    <dependency>
-      <groupId>${project.groupId}</groupId>
-      <artifactId>add-provider</artifactId>
-      <version>${project.version}</version>
-      <scope>runtime</scope>
-    </dependency>
-    <dependency>
-      <groupId>${project.groupId}</groupId>
-      <artifactId>sub-provider</artifactId>
-      <version>${project.version}</version>
-      <scope>runtime</scope>
-    </dependency>
   </dependencies>
 
   <build>
@@ -53,15 +40,6 @@
               <mainClass>org.enso.runner.Runner</mainClass>
             </transformer>
           </transformers>
-        </configuration>
-      </plugin>
-
-      <plugin>
-        <groupId>org.codehaus.mojo</groupId>
-        <artifactId>exec-maven-plugin</artifactId>
-        <version>3.2.0</version>
-        <configuration>
-          <mainClass>org.enso.runner.Runner</mainClass>
         </configuration>
       </plugin>
     </plugins>
