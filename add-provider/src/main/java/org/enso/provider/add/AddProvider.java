@@ -4,7 +4,7 @@ import org.enso.lib.Service;
 
 public class AddProvider implements Service {
     @Override
-    public String loadConfig() {
-        return "Config from AddProvider";
+    public int combine(int x, int y) {
+        return x + y;
     }
 }

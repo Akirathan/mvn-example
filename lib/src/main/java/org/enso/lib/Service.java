@@ -1,5 +1,5 @@
 package org.enso.lib;
 
 public interface Service {
-    String loadConfig();
+    int combine(int x, int y);
 }

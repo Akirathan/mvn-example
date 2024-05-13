@@ -1,11 +1,13 @@
 package org.enso.lib;
 
 public class Lib {
-    public static int add(int x, int y) {
-        return x + y;
+    private final Service provider;
+
+    public Lib(Service provider) {
+        this.provider = provider;
     }
 
-    private static int privateAdd(int x, int y) {
-        return x + y + 42;
+    public int combine(int x, int y) {
+        return provider.combine(x, y);
     }
 }
