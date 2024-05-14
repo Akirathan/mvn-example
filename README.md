@@ -7,17 +7,6 @@ The architecture of the application:
 
 ![Architecture](./simple-fat-jar-app.svg)
 
-## Fat JAR
-Compile everything and assemble the fat jar:
-```shell
-mvn install
-```
-
-Run the fat jar:
-```shell
-java -jar runner/target/runner-1.0-SNAPSHOT.jar
-```
-
 ## Modular JARs
 Compile all the modules and move them in the `runner/target/modules` directory.
 ```shell
