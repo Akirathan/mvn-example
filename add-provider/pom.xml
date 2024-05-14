@@ -16,5 +16,12 @@
       <artifactId>lib</artifactId>
       <version>${project.version}</version>
     </dependency>
+    <dependency>
+      <groupId>org.netbeans.api</groupId>
+      <artifactId>org-openide-util-lookup</artifactId>
+      <version>RELEASE150</version>
+      <scope>provided</scope>
+      <type>jar</type>
+    </dependency>
   </dependencies>
 </project>

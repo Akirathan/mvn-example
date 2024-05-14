@@ -1,7 +1,9 @@
 package org.enso.provider.add;
 
 import org.enso.lib.Service;
+import org.openide.util.lookup.ServiceProvider;
 
+@ServiceProvider(service=Service.class)
 public class AddProvider implements Service {
     @Override
     public int combine(int x, int y) {
