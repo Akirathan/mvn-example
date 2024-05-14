@@ -10,8 +10,7 @@ The architecture of the application:
 ## Fat JAR
 Compile everything and assemble the fat jar:
 ```shell
-mvn compile jar:jar install
-mvn -f runner package shade:shade
+mvn install
 ```
 
 Run the fat jar:

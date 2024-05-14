@@ -40,10 +40,18 @@
   </dependencies>
 
   <build>
-    <pluginManagement>
     <plugins>
       <plugin>
         <artifactId>maven-shade-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>fat-jar</id>
+            <phase>package</phase>
+            <goals>
+              <goal>shade</goal>
+            </goals>
+          </execution>
+        </executions>
         <configuration>
           <transformers>
             <!-- Ensure that all files META-INF/service directory are merged -->
@@ -56,7 +64,6 @@
         </configuration>
       </plugin>
     </plugins>
-    </pluginManagement>
   </build>
 
 </project>
