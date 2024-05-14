@@ -37,25 +37,32 @@
   <build>
     <plugins>
       <plugin>
-        <artifactId>maven-shade-plugin</artifactId>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-dependency-plugin</artifactId>
         <executions>
           <execution>
-            <id>fat-jar</id>
+            <id>copy-all-jars</id>
             <phase>package</phase>
             <goals>
-              <goal>shade</goal>
+              <goal>copy-dependencies</goal>
             </goals>
           </execution>
         </executions>
         <configuration>
-          <transformers>
-            <!-- Ensure that all files META-INF/service directory are merged -->
-            <transformer implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer"/>
-            <!-- Ensure there is correct Main-Class attribute in the fat JAR -->
-            <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+          <outputDirectory>${project.build.directory}/modules</outputDirectory>
+        </configuration>
+      </plugin>
+
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jar-plugin</artifactId>
+        <configuration>
+          <outputDirectory>${project.build.directory}/modules</outputDirectory>
+          <archive>
+            <manifest>
               <mainClass>org.enso.runner.Runner</mainClass>
-            </transformer>
-          </transformers>
+            </manifest>
+          </archive>
         </configuration>
       </plugin>
     </plugins>
